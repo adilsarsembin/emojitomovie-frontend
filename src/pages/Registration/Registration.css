@@ -1,0 +1,43 @@
+/* {
+  background-color: #1e1e1e;
+}
+.maincard {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	flex-direction: column;
+}
+.maincard {
+  width: 25%;
+  height: 70%;
+  border: 3px solid #ffcc22;
+  background-color: #1e1e1e;
+  border-radius: 5%;
+	padding: 0 50px;
+}
+.username {
+	display: flex;
+	flex-direction: column;
+}
+.password {
+	display: flex;
+	flex-direction: column;
+}
+h3 {
+  text-align: center;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+	color: #ffcc22;
+}
+label {
+	font-family: "Nunito Sans";
+	font-size: 18px;
+	color: #ffcc22;
+}
+p {
+	color: #ffcc22;
+} */
