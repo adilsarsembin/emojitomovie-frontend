@@ -1,29 +1,43 @@
 import React from "react";
-import "./Home.css";
 import Slider from "react-slick";
+import {topImages, bottomImages} from './images'
+import "./Home.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function Home() {
-  const images = [
-    { id: 1, text: "film1", image: require("../../photos/image1.png") },
-    { id: 2, text: "film2", image: require("../../photos/image2.png") },
-    { id: 3, text: "film3", image: require("../../photos/image3.png") },
-    { id: 4, text: "film4", image: require("../../photos/image4.png") },
-    { id: 5, text: "film5", image: require("../../photos/image5.png") },
-    { id: 6, text: "film6", image: require("../../photos/image6.png") },
-    { id: 7, text: "film7", image: require("../../photos/image7.png") },
-    { id: 8, text: "film8", image: require("../../photos/image8.png") },
-  ];
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear"
+  };
 
   return (
     <div className="home">
-      {images.map((item) => {
-        console.log(item);
+      <Slider {...settings}>
+      {topImages.map((item) => (
+        <div className="top-photos">
+          <img 
+					 src={item.image} 
+					 alt={item.text}></img>
+        </div>
+      ))}
+      </Slider>
+      <Slider {...settings}>
+      {bottomImages.map((item) => (
         <div className="photos">
           <img 
 					 src={item.image} 
 					 alt={item.text}></img>
-        </div>;
-      })}
+        </div>
+      ))}
+      </Slider>
     </div>
   );
 }
