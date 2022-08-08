@@ -1,0 +1,19 @@
+.homeSlider {
+  overflow: hidden;
+  height: 630px;
+  transform: rotate(10deg) translateY(-20%) translateX(-20%) ;
+}
+
+.homeSlider > div:last-child {
+  margin-top: 30px;
+}
+
+.homeSlider__slider {
+}
+
+.homeSlider__img {
+  width: 417px;
+  height: 294px;
+  object-fit: cover;
+  border-radius: 30px; 
+}

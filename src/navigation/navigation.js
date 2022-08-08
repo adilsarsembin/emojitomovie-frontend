@@ -1,39 +1,55 @@
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-// const navigate = useNavigate();
+const useNavigation = () => {
+  const navigate = useNavigate();
 
-// export const navigateToPackages = () => {
-//   navigate("/packages");
-// };
+  const navigateToPackages = () => {
+    navigate("/packages");
+  };
 
-// export const navigateToMultiplayer = () => {
-//   navigate("/multiplayer");
-// };
+ const navigateToMultiplayer = () => {
+  navigate("/multiplayer");
+};
 
-// export const navigateToSettings = () => {
-//   navigate("/settings");
-// };
+ const navigateToSettings = () => {
+  navigate("/settings");
+};
 
-// export const navigateToQuickGame = () => {
-//   navigate("/quickgame");
-// };
+ const navigateToQuickGame = () => {
+  navigate("/quickgame");
+};
 
-// export const navigateToHome = () => {
-//   navigate("/home");
-// };
+ const navigateToHome = () => {
+  navigate("/home");
+};
 
-// export const navigateToRegistration = () => {
-//   navigate("/registration");
-// };
+ const navigateToRegistration = () => {
+  navigate("/registration");
+};
 
-// export const navigateToGame = () => {
-//   navigate("/game");
-// };
+ const navigateToGame = () => {
+  navigate("/game");
+};
 
-// export const navigateToLogin = () => {
-//   navigate("/login");
-// };
+ const navigateToLogin = () => {
+  navigate("/login");
+};
 
-// export const navigateToMainMenu = () => {
-//   navigate("/mainmenu");
-// };
+ const navigateToMainMenu = () => {
+  navigate("/mainmenu");
+};
+
+  return {
+    navigateToPackages,
+    navigateToGame,
+    navigateToLogin,
+    navigateToHome,
+    navigateToMainMenu,
+    navigateToMultiplayer,
+    navigateToQuickGame,
+    navigateToRegistration,
+    navigateToSettings
+  }
+}
+
+export default useNavigation;
